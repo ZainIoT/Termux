@@ -1,0 +1,119 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>数学</title>
+        <!-- 作者信息 -->
+        <meta name="author" content="ZainIoT">
+        <!-- 主题 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+        <link rel="stylesheet" href="theme-custom.css">
+        <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"> -->
+        <!-- LaTex公式显示 -->
+            <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+        <!-- 评论 -->
+            <!-- <link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css"> -->
+    </head>
+    <body>
+        <div id="app">loading...</div>
+        <script>
+        window.$docsify = {
+            auto2top: true,              // 当路线改变时滚动到屏幕顶部
+            loadSidebar: 'SUMMARY.md',   // 侧边栏目录文件
+            maxLevel: 4,                 // 最大内容级别表
+            subMaxLevel: 3,              // md文件的三级以上标题显示在侧边栏
+
+            name: '数学',                // 侧边栏顶部名字
+            repo: 'https://github.com/ZainIoT/Mathematics',   // 右上角GitHub项目路径
+            homepage: 'index.md',       // 网站首页
+            themeColor: '#0B87DA',
+
+            search: {
+                paths: 'auto',  // 搜索路径
+                placeholder: '搜索',     // 搜索框提示
+                noData: '没有你要找的内容!',    // No results!
+                depth: 6,       // 搜索深度
+                namespace: 'website-Math',
+            },
+
+            // markdown: function(marked, renderer) {
+            //     // ...
+            //     return marked
+            // },
+
+            tabs: {// 插件
+                persist: true,      // 确定在页面刷新/重新访问之后是否还原选项卡选择。
+                sync: false,        // 确定标签选择是否将跨标签与匹配标签同步。
+                theme: 'classic',   // 主题
+                // 标题选项卡的定义方式，两种，可同时启用
+                tabComments: true,  // 确定是否可以使用选项卡注释定义选项卡集中的选项卡。
+                tabHeadings: true,  // 确定是否可以使用标题 + 粗体标记来定义选项卡集中的选项卡。
+            },
+
+            themeable: {
+                readyTransition: true, // 加载等待指示符
+                responsiveTables: false, // 使表格垂直布局
+            },
+
+            // docsify-copy-code
+            copyCode: {// 插件
+                buttonText : '点击复制',
+                errorText  : 'Error',
+                successText: '复制成功',
+            },
+
+            // 翻页按钮
+            pagination: {
+                previousText: 'PREVIOUS',
+                nextText: 'NEXT',
+                crossChapter: true
+            },
+        }
+        </script>
+        
+        <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+        <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+        <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js"></script>
+        <!-- themeable一项对应的索引（它使表格宽度为页面宽度） -->
+            <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0"></script>
+        <!-- 一键复制代码 -->
+            <script src="//unpkg.com/docsify-copy-code"></script>
+        <!-- 翻页按钮 -->
+            <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+        <!-- 单击图片后放大图片 -->
+            <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+        <!-- 高亮代码块 -->
+        <!-- 支持的语法高亮列表查询链接：https://github.com/PrismJS/prism/tree/gh-pages/components -->
+            <script src="//unpkg.com/prismjs/components/prism-c.js"></script>
+            <script src="//unpkg.com/prismjs/components/prism-c.min.js"></script>
+            <script src="//unpkg.com/prismjs/components/prism-cpp.js"></script>
+            <script src="//unpkg.com/prismjs/components/prism-cpp.min.js"></script>
+            <script src="//unpkg.com/prismjs/components/prism-python.js"></script>
+            <script src="//unpkg.com/prismjs/components/prism-python.min.js"></script>
+        <!-- LaTex公式显示 -->
+            <!-- CDN files for docsify-katex -->
+            <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+            <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+        <!-- 像表格一样，显示多个文件 -->
+            <!-- https://jhildenbiddle.github.io/docsify-tabs/#/ -->
+            <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+        <!-- 评论功能 -->
+            <!-- <script src="//unpkg.com/docsify/lib/plugins/gitalk.min.js"></script>
+            <script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
+            <script>
+                const gitalk = new Gitalk({
+                    clientID: '{{theme.gitalk.clientID}}',
+                    clientSecret: '{{theme.gitalk.clientSecret}}',
+                    repo: '{{theme.gitalk.repo}}',
+                    owner: '{{theme.gitalk.owner}}',
+                    admin: '{{theme.gitalk.admin}}'.split(','),
+                    id: '{{page.date}}',
+                    pagerDirection: '{{theme.gitalk.pagerDirection}}',
+                    // facebook-like distraction free mode
+                    distractionFreeMode: false
+                })
+            </script> -->
+    </body>
+</html>
