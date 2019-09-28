@@ -41,7 +41,7 @@ read -p "确认 [Y/y]，取消 [N/n]" changeBoot
 case ${changeBoot} in
     Y | y)
         echo "ok"
-        curl -O https://raw.githubusercontent.com/ZainIoT/Termux/master/motd
+        curl -fsSO https://raw.githubusercontent.com/ZainIoT/Termux/master/motd
         mv motd $PREFIX/etc/motd
         ;;
     N | n)
