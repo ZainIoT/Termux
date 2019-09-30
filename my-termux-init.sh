@@ -17,6 +17,8 @@ case ${changeSources} in
 esac
 unset changeSources
 
+pkg install vim -y
+
 # 扩展键盘
 echo "使用扩展键盘？"
 read -p "确认 [Y/y]，取消 [N/n]" changeKey
