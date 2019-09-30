@@ -1,4 +1,4 @@
-🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌🚌
+------------------------------------------------------
 
 		  Welcome to Termux!
 
@@ -9,9 +9,9 @@ Subscribing to additional repositories:
  * X11:      pkg install x11-repo
 
 welcome use termux-init.sh for zainiot:
- * https://raw.githubusercontent.com/ZainIoT/Termux/master/my-termux-init.sh
+
  * 更换国内镜像	  $PREFIX/etc/apt/sources.list
  * 扩展特殊键盘	  $HOME/.termux/termux.properties
  * 更换欢迎界面	  $PREFIX/etc/motd
 
---------------------------------------------------------
+------------------------------------------------------
