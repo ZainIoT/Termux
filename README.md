@@ -19,4 +19,5 @@ https://termux.com/
 # Termux 下载
 
 [F-Droid 下载点我](https://f-droid.org/packages/com.termux/)
+
 有能力的也可在 谷歌play 下载
