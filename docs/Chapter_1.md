@@ -39,26 +39,34 @@ echo -e "# The main termux repository:\n# deb https://dl.bintray.com/termux/term
 >
 >并且卡进度条，此时退出 termux 的进程，重新打开，并运行 `dpkg --configure -a` 即可修复。
 
-### 其他
+### 扩展软键盘
 
-获取存储权限：
+在home目录下，创建目录 `.termux`
+
+然后执行如下指令：
+
+```
+echo "extra-keys = [['ESC','TAB','{','}','|','HOME','UP','END','PGUP'],['CTRL','ALT','<','>','-','LEFT','DOWN','RIGHT','PGDN']]" > $HOME/.termux/termux.properties
+```
+
+若发现报错，执行 `pkg install vim`
+
+然后在执行 `echo` 开头的指令
+
+### 修改开机提示语
+
+开机提示语文件在如下路径： `$PREFIX/etc/motd`
+
+修改 `motd` 文件的内容，即可修改
+
+### Termux 设置开机密码
+
+Termux 开机是没有密码输入的，任何人可以直接进入并使用
+
+在此我们可以创建一个伪密码，可以做到部分保护的作用
+
+之所以叫伪密码，是因为这个密码过程可以被终止，进而进入shell命令终端
+
+### 获取存储权限：
+
 `termux-setup-storage`
-
-```
-vim
-git 
-python  
-python -m pip install --upgrade pip
-mariadb
-tmux
-ssh
-termux-api
-```
-
-
-### 安装顺序记录
-
-安装vim
-创建文件夹，扩展键盘
-更换镜像源
-更换启动页

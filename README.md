@@ -21,3 +21,26 @@ https://termux.com/
 [F-Droid 下载点我](https://f-droid.org/packages/com.termux/)
 
 有能力的也可在 谷歌play 下载
+
+### 个人安装顺序记录
+
+安装vim
+
+创建文件夹，扩展键盘
+
+更换镜像源
+
+更换启动页
+
+### 其他
+
+```
+vim
+git 
+python  
+python -m pip install --upgrade pip
+mariadb
+tmux
+ssh
+termux-api
+```
