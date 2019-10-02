@@ -23,15 +23,15 @@ echo -e "# The main termux repository:\n# deb https://dl.bintray.com/termux/term
 
 >将字符 `deb https://dl.bintray.com/termux/termux-packages-24 stable main` 替换为自己想要设置的镜像即可。
 
->! 该镜像的报错与修复
+!> 该镜像的报错与修复
 
->! 在`Android P`上使用TUNA源在执行 `pkg upgrade` 的时候会出现报错：
+!> 在`Android P`上使用TUNA源在执行 `pkg upgrade` 的时候会出现报错：
 >
 > `bash CANNOT LINK EXECUTABLE "dpkg-deb": library "libz.so.1" not found dpkg: error >processing archive`
 >
 >此时退出 termux 的进程，重新打开并执行 `pkg up` 即可修复。
 	
->! 也可能出现以下报错：
+!> 也可能出现以下报错：
 >
 > `bash CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/lib/apt/methods/https": library "libnghttp2.so" not found CANNOT LINK EXECUTABLE "/data/data/com.termux/files/usr/lib/apt/methods/https": library "libnghttp2.so" not found`
 >
