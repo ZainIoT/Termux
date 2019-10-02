@@ -12,9 +12,11 @@
 
 **也可以同我一起进行中文教程的编写！**
 
-### Termux 官网 https://termux.com/
+# Termux 官网 
 
-### Termux 下载
+https://termux.com/
+
+# Termux 下载
 
 [F-Droid 下载点我](https://f-droid.org/packages/com.termux/)
 有能力的也可在 谷歌play 下载
